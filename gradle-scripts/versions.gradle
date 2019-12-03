@@ -1,0 +1,61 @@
+ext {
+
+    gradle_version = '3.4.1'
+    google_services_version = '4.3.0'
+    kotlin_version = '1.3.50'
+    jacoco_version = '0.8.4'
+    android_junit5_version = '1.4.2.0'
+    fabric_gradle_version = '1.29.0'
+
+    compileSdk = 28
+    minSdk = 21
+    targetSdk = 28
+
+    versions = [
+            'androidx_arch_core'          : '2.1.0',
+            'androidx_core'               : '1.1.0',
+            'androidx_appcompat'          : '1.1.0',
+            'androidx_constraintlayout'   : '1.1.3',
+            'androidx_lifecycle'          : '2.1.0',
+            'androidx_livedata'           : '2.1.0',
+            'androidx_room'               : '2.1.0',
+            'androidx_cardview'           : '1.0.0',
+            'anko'                        : '0.10.8',
+            'caverock'                    : '1.4',
+            'chuck'                       : '1.1.0',
+            'circle_imageview'            : '3.0.0',
+            'coroutines'                  : '1.2.1',
+            'customtabs'                  : '28.0.0',
+            'debug_db'                    : '1.0.6',
+            'firebase_core'               : '17.2.1',
+            'firebase_messaging'          : '20.0.1',
+            'glide'                       : '4.9.0',
+            'hamcrest'                    : '2.1',
+            'junit5_runner'               : '0.2.2',
+            'koin'                        : '2.0.1',
+            'leakcanary'                  : '2.0-alpha-2',
+            'legacy_v4'                   : '1.0.0',
+            'lifecycle_ext'               : '2.0.0',
+            'lifecycle_viewmodel_ktx'     : '2.0.0',
+            'material'                    : '1.0.0',
+            'mockito'                     : '2.28.2',
+            'mockWebServer'               : '3.12.0',
+            'mockito_kotlin'              : '2.1.0',
+            'okhttp'                      : '4.1.0',
+            'picasso'                     : '2.71828',
+            'retrofit'                    : '2.6.1',
+            'spek2'                       : '2.1.0-alpha.0.10+cc4a596',
+            'support_runner'              : '1.0.2',
+            'zxing'                       : '3.4.0',
+            'crashlytics'                 : '2.10.1',
+            'fit_chart'                   : '1.0',
+            'web_socket'                  : '1.4.0',
+            'test_runner'                 : '1.2.0',
+            'test_rules'                  : '1.2.0',
+            'mannodermaus'                : '1.1.0',
+            'jupiter_api'                 : '5.5.2',
+            'espresso_core'               : '3.2.0',
+            'shimmer'                     : '0.5.0'
+    ]
+
+}
