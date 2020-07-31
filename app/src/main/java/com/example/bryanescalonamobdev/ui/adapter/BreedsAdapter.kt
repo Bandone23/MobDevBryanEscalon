@@ -14,15 +14,8 @@ import kotlinx.android.synthetic.main.item_breeds.view.*
  var name =""
 class BreedsAdapter(
     private var items: ArrayList<String>,
-    private val clickListener: (ArrayList<String>, Int) -> Unit
-) : RecyclerView.Adapter<RecyclerView.ViewHolder>(), View.OnClickListener {
-    private var mTextListener: ItemTextListener? = null
-
-    private lateinit var callbacks: onClikViewModel
-    fun onClickViewModel(callback: onClikViewModel) {
-        callbacks = callback
-    }
-
+    private val clickListener: (String, Int) -> Unit
+) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun getItemCount(): Int {
         return items.size
@@ -43,26 +36,8 @@ class BreedsAdapter(
      val item = items[position]
         holder as BreedsNHolder
         holder.bindEvent(item,clickListener)
-        holder.itemView.container_card.setOnClickListener {
-             name= item
-            callbacks.onClickViewModel()
-        }
-
-    }
-
-    interface ItemTextListener {
-        fun onDeleteItem(position : Int)
-    }
 
 
-    // allows clicks events to be caught
-    internal fun setClickListener(itemTextListener: BreedsAdapter.ItemTextListener) {
-        this.mTextListener = itemTextListener
-
-    }
-
-    override fun onClick(v: View?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
 

@@ -26,7 +26,7 @@ class BreedsViewModel (
         getBreedsImgUseCase.execute(liveData = breedsImgLiveData,params = NameDogRequest(nameId) )
     }
 
-    fun initAdapter(clickListener: (ArrayList<String>, Int) -> Unit) {
+    fun initAdapter(clickListener: (String, Int) -> Unit) {
         adapter = BreedsAdapter(arrayListOf(), clickListener)
 
     }

@@ -9,11 +9,11 @@ class BreedsNHolder (
     private val binding: ItemBreedsBinding
 ) : RecyclerView.ViewHolder(binding.root) {
     fun bindEvent(breedsData: String,
-                  clickListener: (ArrayList<String>, Int) -> Unit
+                  clickListener: (String, Int) -> Unit
                   ) {
         binding.textBreeds.text = breedsData
         binding.name =breedsData
-        binding.containerCard.setOnClickListener {  clickListener(ArrayList(), binding.containerCard.id) }
+        binding.containerCard.setOnClickListener {  clickListener(breedsData, binding.containerCard.id) }
         binding.executePendingBindings()
     }
 
